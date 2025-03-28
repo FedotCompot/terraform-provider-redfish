@@ -57,7 +57,7 @@ func TestAccRedfishIDRACAttributesBasic17G(t *testing.T) {
 	version := os.Getenv("TF_TESTING_REDFISH_VERSION")
 	resource.Test(t, resource.TestCase{
 		PreCheck: func() {
-			if version != "17" {
+			if version == "17" {
 				t.Skip("Skipping 17G test")
 			}
 			testAccPreCheck(t)
@@ -303,7 +303,7 @@ func TestAccRedfishIDRACAttributes17GParam(t *testing.T) {
 	version := os.Getenv("TF_TESTING_REDFISH_VERSION")
 	resource.Test(t, resource.TestCase{
 		PreCheck: func() {
-			if version != "17" {
+			if version == "17" {
 				t.Skip("Skipping 17G test")
 			}
 			testAccPreCheck(t)

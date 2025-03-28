@@ -90,7 +90,7 @@ func TestAccRedfishDirectoryServiceAuthProviderBasic(t *testing.T) {
 
 func TestAccRedfishDirectoryServiceAuthProviderBasic_17GConfig(t *testing.T) {
 	version := os.Getenv("TF_TESTING_REDFISH_VERSION")
-	if version != "17" {
+	if version == "17" {
 		t.Skip("Skipping DirectoryService 17G tests for below 17G")
 	}
 	terraformDSAuthProviderResourceName := "redfish_directory_service_auth_provider.ds_auth"
