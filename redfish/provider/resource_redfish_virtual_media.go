@@ -67,10 +67,10 @@ func (*virtualMediaResource) Metadata(_ context.Context, req resource.MetadataRe
 // VirtualMediaSchema defines the schema for the resource.
 func VirtualMediaSchema() map[string]schema.Attribute {
 	return map[string]schema.Attribute{
-		"id": schema.StringAttribute{
+		"media_id": schema.StringAttribute{
 			MarkdownDescription: "ID of the virtual media resource",
 			Description:         "ID of the virtual media resource",
-			Computed:            true,
+			Computed:            false,
 		},
 		"image": schema.StringAttribute{
 			Required:            true,
