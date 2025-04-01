@@ -214,12 +214,14 @@ func (r *virtualMediaResource) Create(ctx context.Context, req resource.CreateRe
 	} else {
 		// This implementation is added to support iDRAC firmware version 5.x. As virtual media can only be accessed through Managers card on 5.x.
 		// Get OOB Manager card - managers[0] will be our oob card
-		var virtualMediaID string
-		plan.SystemID = types.StringValue("")
-		if strings.HasSuffix(plan.Image.ValueString(), ".iso") {
-			virtualMediaID = "CD"
-		} else {
-			virtualMediaID = "RemovableDisk"
+		var virtualMediaID string = plan.VirtualMediaID.ValueString()
+		if len(virtualMediaID) == 0 {
+			plan.SystemID = types.StringValue("")
+			if strings.HasSuffix(plan.Image.ValueString(), ".iso") {
+				virtualMediaID = "CD"
+			} else {
+				virtualMediaID = "RemovableDisk"
+			}
 		}
 
 		virtualMedia, err := helper.InsertMedia(virtualMediaID, virtualMediaCollection, virtualMediaConfig, service)

@@ -23,7 +23,7 @@ import (
 
 // VirtualMedia struct
 type VirtualMedia struct {
-	VirtualMediaID       types.String    `tfsdk:"id"`
+	VirtualMediaID       types.String    `tfsdk:"media_id"`
 	RedfishServer        []RedfishServer `tfsdk:"redfish_server"`
 	Image                types.String    `tfsdk:"image"`
 	Inserted             types.Bool      `tfsdk:"inserted"`
