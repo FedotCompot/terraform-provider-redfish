@@ -39,7 +39,7 @@ terraform init
 
 ## Installation from source code
 
-1. Clone this [redfish](https://github.com/dell/terraform-provider-redfish) repo 
+1. Clone this [redfish](https://github.com/FedotCompot/terraform-provider-redfish) repo 
 2. In the root of this repo run
 ```
 make install

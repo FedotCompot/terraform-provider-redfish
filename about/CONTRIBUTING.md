@@ -151,7 +151,7 @@ GitHub Actions are used to enforce quality gates when a pull request is created 
 
 #### Code sanitization
 
-[GitHub action](https://github.com/dell/terraform-provider-redfish/actions/workflows/ansible-test.yml) that analyzes source code to flag ansible sanity errors and runs Unit tests.
+[GitHub action](https://github.com/FedotCompot/terraform-provider-redfish/actions/workflows/ansible-test.yml) that analyzes source code to flag ansible sanity errors and runs Unit tests.
 
 ## Code reviews
 

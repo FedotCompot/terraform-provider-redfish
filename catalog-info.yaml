@@ -14,12 +14,12 @@ metadata:
     - redfish
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: dell/terraform-provider-redfish
+    github.com/project-slug: FedotCompot/terraform-provider-redfish
   links:   
     - url: 'https://dell.github.io/terraform-docs/docs/storage/platforms/redfish/'
       title: 'Dell Terraform Providers Documentation'
       icon: 'web'
-    - url: 'https://github.com/dell/terraform-provider-redfish/issues'
+    - url: 'https://github.com/FedotCompot/terraform-provider-redfish/issues'
       title: 'Contact Technical Support'
       icon: 'help'
 spec:
