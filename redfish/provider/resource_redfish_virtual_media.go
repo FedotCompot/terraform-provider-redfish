@@ -71,9 +71,10 @@ func VirtualMediaSchema() map[string]schema.Attribute {
 			MarkdownDescription: "ID of the virtual media resource",
 			Description:         "ID of the virtual media resource",
 			Computed:            false,
+			Required:            false, 
 		},
 		"image": schema.StringAttribute{
-			Required:            true,
+			Required:            true, 
 			Description:         "The URI of the remote media to attach to the virtual media",
 			MarkdownDescription: "The URI of the remote media to attach to the virtual media",
 		},
