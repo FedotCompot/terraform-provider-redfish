@@ -195,6 +195,7 @@ After the successful execution of the above resource block, virtual media would 
 
 ### Optional
 
+- `media_id` (String) ID of the virtual media resource
 - `redfish_server` (Block List) List of server BMCs and their respective user credentials (see [below for nested schema](#nestedblock--redfish_server))
 - `system_id` (String) System ID of the system
 - `transfer_method` (String) Indicates how the data is transferred
@@ -203,7 +204,6 @@ After the successful execution of the above resource block, virtual media would 
 
 ### Read-Only
 
-- `id` (String) ID of the virtual media resource
 - `inserted` (Boolean) Describes whether virtual media is attached or detached
 
 <a id="nestedblock--redfish_server"></a>
