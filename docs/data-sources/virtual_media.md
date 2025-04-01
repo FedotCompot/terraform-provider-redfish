@@ -188,6 +188,7 @@ After the successful execution of the above data block, we can see the output in
 
 Optional:
 
+- `media_id` (String) Id of the virtual media resource
 - `endpoint` (String) Server BMC IP address or hostname
 - `password` (String, Sensitive) User password for login
 - `redfish_alias` (String) Alias name for server BMCs. The key in provider's `redfish_servers` map
@@ -200,5 +201,4 @@ Optional:
 
 Read-Only:
 
-- `id` (String) Id of the virtual media resource
 - `odata_id` (String) OData ID for the Virtual Media resource
